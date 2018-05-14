@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="ex02.Page5"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ex02"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel BorderBrush="OrangeRed" BorderThickness="0.5" MaxWidth="270" Height="400" HorizontalAlignment="Left">
+            <StackPanel Background="AliceBlue" Margin="20">
+                <TextBlock Text="Select your OS" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <RadioButton Content="Mac OS" GroupName="os" IsChecked="True"/>
+                <RadioButton Content="Windows 8"  GroupName="os" />
+                <RadioButton Content="Windows 10"  GroupName="os" />
+            </StackPanel>
+            <StackPanel Background="Lavender" Margin="20">
+                <TextBlock Text="Office Version" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <RadioButton Content="Office 2013" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="office" IsChecked="True"/>
+                <RadioButton Content="Office 2016" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="office" />
+                <RadioButton Content="Office 365" HorizontalAlignment="Left" VerticalAlignment="Top" GroupName="office" />
+            </StackPanel>
+            <Button Content="OKAY!" Click="goButton_Click" Background="LightBlue" Foreground="Black" BorderBrush="DarkBlue"/>
+        </StackPanel>
+    </Grid> 
+</Page>

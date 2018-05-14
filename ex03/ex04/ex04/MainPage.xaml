@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="ex04.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ex04"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="button" Margin="300" Width="100" Height="130" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="top">
+            <CheckBox x:Name="firstCheck" Checked="firstCheck_Checked" Unchecked="firstCheck_Unchecked">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="Images/capture.png" />
+                    <TextBlock x:Name="block1" Text="Select" HorizontalAlignment="Center" FontFamily="exo" FontSize="20"/>
+                </StackPanel>
+            </CheckBox>
+        </Button>
+        <Button x:Name="button2" Margin="400,300" Width="100" Height="130" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="top">
+            <CheckBox x:Name="secondClicked" Checked="secondClicked_Checked" Unchecked="secondClicked_Unchecked">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="Images/capture.png" />
+                    <TextBlock x:Name="block2" Text="Select" HorizontalAlignment="Center" FontFamily="exo" FontSize="20"/>
+                </StackPanel>
+            </CheckBox>
+        </Button>
+    </Grid>
+</Page>

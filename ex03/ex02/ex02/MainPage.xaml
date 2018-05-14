@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="ex02.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ex02"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FFFCBF94" Height="400" Width="560">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="330*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Width" Grid.Column="0" Margin="15,75,0,0" Height="30" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBox Name="widthBox" Grid.Column="0" Margin="70,70,0,0" Height="30" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Text="Height" Grid.Column="0" Margin="15,125,0,0" Height="30" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBox Name="heightBox" Grid.Column="0" Margin="70,120,0,0" Height="30" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Name="rectButton" Content="Rectangle" Width="90" Grid.Column="0" Margin="60,200,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="rectButton_Click" />
+        <Button Name="ellButton" Content="Ellipse" Width="90" Grid.Column="0" Margin="60,240,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="ellButton_Click" />
+        <Canvas Grid.Column="1" Background="LightGoldenrodYellow">
+            <Rectangle Name="rectShape" Width="60" Height="80" Fill="Blue" Margin="40,90" />
+            <Ellipse Name="ellShape" Width="40" Height="40" Fill="Red" Margin="180,270" />
+        </Canvas>
+    </Grid>
+</Page>

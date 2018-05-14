@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="ex03.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ex03"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="500" Width="500">
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,10">
+                <RadioButton GroupName="x" x:Name="regBut" Content="Regular" IsChecked="True" />
+                <RadioButton GroupName="x" x:Name="expBut" Content="Express" />
+                <RadioButton GroupName="x" x:Name="couBut" Content="Courier" />
+            </StackPanel>
+            <TextBlock Text="Enter weight of item" Width="150" HorizontalAlignment="Left" Margin="10,10" />
+            <TextBox x:Name="box" Text="Weight" Width="30" Height="30" HorizontalAlignment="Center" Margin="-40,-60" />
+        </StackPanel>
+
+        <Button x:Name="button" Content="Calculate" Click="button_Click" />
+    </Grid>
+</Page>

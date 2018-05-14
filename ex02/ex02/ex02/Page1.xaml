@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="ex02.BlankPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ex02"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel>
+            <TextBlock x:Name="testTextBlock" Margin="10,10,10,10" Text="Hello World!" />
+            <Button x:Name="testHelloButton" Margin="10,10,10,10" Content="HELLO" Click="testHelloButton_Click" />
+            <Button x:Name="testClearButton" Click="testClearButton_Click" Content="CLEAR" Margin="10,10,10,10" VerticalAlignment="Top" HorizontalAlignment="left" Width="75">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0" StartPoint="0,0">
+                        <GradientStop Color="Yellow" Offset="0" />
+                        <GradientStop Color="Red" Offset="1" />
+                    </LinearGradientBrush>
+                </Button.Background>     
+            </Button>
+        </StackPanel>
+    </Grid>
+</Page>

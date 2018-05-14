@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="Sum.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Sum"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Width="240" HorizontalAlignment="Left">
+            <StackPanel HorizontalAlignment="Left" Margin="10">
+                <TextBlock Text="Number 1:" HorizontalAlignment="Left" Margin="0,20,0,0"/>
+                <TextBox Name="num1Box" Text="1" HorizontalAlignment="Right" Margin="90,-25,0,0"/>
+                <TextBlock Text="Number 2:" HorizontalAlignment="Left" Margin="0,20,0,0" />
+                <TextBox Name="num2Box" Text="2" HorizontalAlignment="Right" Margin="90,-25,0,0" />
+                <TextBlock Text="Your answer: " HorizontalAlignment="Left" Margin="0,20,0,0" />
+                <TextBox Name="sumBox" Text="3" HorizontalAlignment="Right" Margin="90,-25,0,0" />
+            </StackPanel>
+            <Button Name="goButton" Content="Go!" Click="goButton_Click" Background="BlueViolet" Foreground="IndianRed" />
+            <!--
+            <StackPanel HorizontalAlignment="Left" Margin="5" Orientation="Horizontal">
+                <TextBlock x:Name="num1text" Text="Number 1" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                <TextBox x:Name="num1" Text="" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Margin="5" Orientation="Horizontal">
+                <TextBlock Name="num2text" Text="Number 2" VerticalAlignment="Top" HorizontalAlignment="Left" />
+                <TextBox Name="num2" Text="" VerticalAlignment="Top" HorizontalAlignment="Left" />
+            </StackPanel>
+            <StackPanel Margin="5" Orientation="Horizontal">
+                <TextBlock Name="answerText" Text="Your answer" VerticalAlignment="Top" HorizontalAlignment="Left" />
+                <TextBox Name="sum" Text="" VerticalAlignment="Top" HorizontalAlignment="Right" />
+            </StackPanel> -->
+        </StackPanel>
+    </Grid>
+</Page>

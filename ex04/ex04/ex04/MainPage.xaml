@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="ex04.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ex04"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Loaded="Page_Loaded">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="600" Width="600">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="350" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <TextBox Grid.Column="0" x:Name="inputBox" Width="350" Height="300" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap"/>
+        <StackPanel Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,30">
+            <TextBlock Text="Find:" />
+            <TextBox x:Name="findBox" Margin="0,20" Width="200" />
+            <TextBlock Text="Replace with:" />
+            <TextBox x:Name="replaceBox" Margin="0,20" Width="200" />
+            <Button x:Name="button" Margin="60,20" Content="REPLACE"  Click="button_Click" />
+        </StackPanel>
+    </Grid>
+</Page>

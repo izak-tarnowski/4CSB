@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="ex02.Page6"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ex02"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Margin="15">
+            <TextBlock Text="Snacks!" />
+            <CheckBox Content="Chips" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top" Name="chipsBox"/>
+            <CheckBox Content="Ice Cream" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top" Name="iceBox"/>
+            <CheckBox Content="Drank" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top" Name="drinkBox"/>
+            <Button Name="goButton" Content="Go!" Click="goButton_Click" HorizontalAlignment="Left" VerticalAlignment="Top" ToolTipService.ToolTip="This is a button!"/>
+        </StackPanel>
+    </Grid>
+</Page>

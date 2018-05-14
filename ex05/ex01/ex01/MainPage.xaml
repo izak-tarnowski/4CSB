@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="ex01.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ex01"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="500" Width="500">
+        <TextBlock Text="Sales Ammount" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20"/>
+        <TextBox x:Name="salesBox" Text="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="190,15"/>
+        <TextBlock Text="Commission ammount" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,70"/>
+        <TextBox x:Name="commBox" Text="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="190,65" />
+        <Button Content="Calculate" Click="Button_Click" VerticalAlignment="Top" Margin="40,120"/>
+    </Grid>
+</Page>
